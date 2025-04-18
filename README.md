@@ -631,6 +631,7 @@ margin-right: 10px;
   
 
 ### Dockerfile
+这里通过go实现简单的http服务器，再通过分层构建的方式来构建docker，实现了docker镜像的极度轻量化，仅有14.57MB，比之前基于nginx:alpine构建的接近50MB的镜像要小得多。
 
 ```dockerfile
 
@@ -667,6 +668,7 @@ CMD ["/root/server"]
 
 ```
 
+需要注意 COPY `--from=builder` /app/server . 实现从上层构建拿取文件，`--from=`后面可以接0也可以接AS重命名的名字
   
 
 ### 编译
