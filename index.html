@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>电之眼</title>
+  <link rel="stylesheet" href="style.css">
+<!--  css样式调用-->
+</head>
+<body>
+<div class="container">
+  <div class="page">
+    <div class="page__hd">
+      <h1 class="weui-cells__title">充电桩列表</h1>
+      <div class="page__ft">
+        <button id="btn1" class="location-btn" data-index="1">三食堂左侧</button>
+        <button id="btn2" class="location-btn" data-index="2">三食堂右侧</button>
+        <button id="btn3" class="location-btn" data-index="3">兰苑外左</button>
+        <button id="btn4" class="location-btn" data-index="4">兰苑外中</button>
+        <button id="btn5" class="location-btn" data-index="5">兰苑外右</button>
+        <button id="btn6" class="location-btn" data-index="6">兰苑内右1</button>
+        <button id="btn7" class="location-btn" data-index="7">兰苑内右2</button>
+        <button id="btn8" class="location-btn" data-index="8">兰苑内右3</button>
+        <button id="btn9" class="location-btn" data-index="9">兰苑内右4</button>
+      </div>
+    </div>
+    <div class="page__bd">
+      <h2 class="weui-cells__title">空充电桩ID:</h2>
+      <div class="weui-cells" id="chargersList">
+        <!-- 充电桩数据将通过JavaScript动态插入 -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="fun.js"></script>
+<!--script标签引入fun.js-->
+</body>
+</html>

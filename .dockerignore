@@ -1,0 +1,12 @@
+# 忽略所有文件
+*
+
+# 包含构建和运行所需的文件
+!fun.js
+!go.mod
+!index.html
+!main.go
+!style.css
+
+# 忽略其他所有文件和目录
+!*/

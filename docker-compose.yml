@@ -1,0 +1,7 @@
+version: '3'
+services:
+  electric-eye:
+    image: pan0623/electric-eye
+    ports:
+      - "62480:80"
+    container_name: electric-eye
